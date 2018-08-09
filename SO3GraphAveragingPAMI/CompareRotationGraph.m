@@ -59,5 +59,6 @@ for t=1:4
 end
 fprintf('#Common=%d; Angular Error (Degrees): Mean=%.2f; Median=%.2f; RMS=%.2f\n',length(ebest),round(Ebest(1,1)*100)/100,round(Ebest(1,2)*100)/100,round(Ebest(1,3)*100)/100);
 hist(ebest,180);
+xlabel('\theta (degree)')
 eall=nan(length(I),1);eall(I)=ebest;
 end
